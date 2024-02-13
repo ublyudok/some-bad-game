@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.gameSpace {
+    width: 1200px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    background-image: url(clouds.gif);
+    margin-top: 20%;
+    background-size: 600px 200px;
+}
+
+#dino {
+    background-image: url(apalon.jpeg);
+    background-size: 70px 70px;
+    width: 60px;
+    top: 140px;
+    position: relative;
+    height: 60px;
+    left: 20px;
+}
+
+#cactus {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 90px;
+    left: 1050px;
+    background-image: url(php.png);
+    background-size: 50px 50px;
+    animation: cactus 3s linear 0.1s infinite alternate
+}
+
+#cactusZet {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -30px;
+    left: 1050px;
+    background-image: url(php.png);
+    background-size: 50px 50px;
+    animation: cactus 3s linear 0.1s infinite alternate
+}
+
+#jestkaya_pulya {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -10px;
+    left: 1050px;
+    background-image: url(ashotik.jpg);
+    background-size: 50px 50px;
+    animation: jestka 1s linear  0.4s infinite;
+}
+
+#second_pulya {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -150px;
+    left: 1050px;
+    background-image: url(ashotik.jpg);
+    background-size: 50px 50px;
+    animation: jestka_second 2s linear  0.4s infinite;
+}
+
+@keyframes jestka {
+    0% {
+        left: 1200px;
+    }
+
+
+    100% {
+        left: -200px;
+    }
+}
+
+@keyframes jestka_second {
+    0% {
+        left: 1200px;
+    }
+
+
+    100% {
+        left: -200px;
+    }
+}
+
+
+.jump {
+    animation: jump 0.3s linear;
+}
+
+@keyframes jump {
+    0% {
+        top: 110px;
+    }
+
+    20% {
+        top: 80px;
+    }
+
+    40% {
+        top: 60px;
+    }
+
+    50% {
+        top: 60px;
+    }
+
+    60% {
+        top: 80px;
+    }
+
+    80% {
+        top: 110px;
+    }
+}
+
+.counter {
+    width: 60px;
+    height: 20px;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 540px;
+}
+
+.win {
+    width: 1000px;
+    height: 600px;
+    position: absolute;
+    background-color: black;
+    inset: -600px 400px 0 auto;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.win p {
+    margin-top: 200px;
+}
+
+.body .win {
+    inset: 0 400px 0 auto;
+}
+
+#endGame {
+    width: 40px;
+    height: 20px;
+    background-color: green;
+    border-radius: 10px;
+}
+
+ .poluchilVelikoyPezdi {
+    animation: poluchilVelikoyPezdi 0.1s linear;
+} 
+
+@keyframes poluchilVelikoyPezdi {
+    0% {
+        background-size: 50px 50px;
+    }
+
+    50% {
+        background-size: 80px 80px;
+    }
+
+    100% {
+        background-size: 50px 50px;
+    }
+
+}
+
+.heathPoint {
+    top: -50px;
+    position: relative;
+    display: inline-flex;
+}
+
+.bestScore {
+    width: 60px;
+    height: 20px;
+    position: relative;
+    background-color: white;
+    border-bottom: 1px solid black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    left: 540px;
+    margin-left: 20px;
+}
